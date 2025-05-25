@@ -419,6 +419,416 @@
             margin-bottom: 0.5rem;
         }
         
+        /* 业务范围故事样式 */
+        .business-story {
+            background-color: #f0f8ff;
+            padding: 1.5rem;
+            border-radius: 8px;
+            border-left: 4px solid #0077b6;
+            margin: 1.5rem 0;
+            font-style: italic;
+            color: #333;
+            line-height: 1.8;
+        }
+        
+        /* 关于我们页面增强样式 */
+        .about-section {
+            position: relative;
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+            border-radius: 8px;
+            background-color: #f8f9fa;
+            overflow: hidden;
+        }
+        
+        .about-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            background: linear-gradient(90deg, #0077b6, #4cc9f0);
+        }
+        
+        .about-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1.5rem;
+        }
+        
+        .about-icon {
+            width: 50px;
+            height: 50px;
+            background-color: #0077b6;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 1rem;
+            color: white;
+            font-size: 1.5rem;
+        }
+        
+        .about-title {
+            font-size: 1.5rem;
+            color: #0077b6;
+            margin: 0;
+        }
+        
+        .company-profile {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+        
+        .profile-text {
+            flex: 3;
+            min-width: 300px;
+        }
+        
+        .profile-stats {
+            flex: 1;
+            min-width: 200px;
+            background-color: #e6f3f8;
+            padding: 1.5rem;
+            border-radius: 8px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+        }
+        
+        .stat-item {
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+        
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: #0077b6;
+            display: block;
+        }
+        
+        .stat-label {
+            font-size: 0.9rem;
+            color: #666;
+        }
+        
+        .timeline {
+            position: relative;
+            margin: 2rem 0;
+            padding-left: 2rem;
+        }
+        
+        .timeline::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 4px;
+            height: 100%;
+            background-color: #e6f3f8;
+            border-radius: 2px;
+        }
+        
+        .timeline-item {
+            position: relative;
+            margin-bottom: 2rem;
+            padding-left: 1.5rem;
+        }
+        
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -2rem;
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            background-color: #0077b6;
+            border: 3px solid #e6f3f8;
+        }
+        
+        .timeline-year {
+            font-weight: bold;
+            color: #0077b6;
+            margin-bottom: 0.5rem;
+        }
+        
+        /* 使用指南页面增强样式 */
+        .guide-section {
+            position: relative;
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+            border-radius: 8px;
+            background-color: #fff9f0;
+            overflow: hidden;
+        }
+        
+        .guide-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            background: linear-gradient(90deg, #f39c12, #f1c40f);
+        }
+        
+        .guide-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1.5rem;
+        }
+        
+        .guide-icon {
+            width: 50px;
+            height: 50px;
+            background-color: #f39c12;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 1rem;
+            color: white;
+            font-size: 1.5rem;
+        }
+        
+        .guide-title {
+            font-size: 1.5rem;
+            color: #f39c12;
+            margin: 0;
+        }
+        
+        .step-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+        
+        .step-card {
+            flex: 1;
+            min-width: 250px;
+            background-color: white;
+            border-radius: 8px;
+            padding: 1.5rem;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .step-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .step-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 5px;
+            height: 100%;
+            background-color: #f39c12;
+        }
+        
+        .step-number {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: rgba(243, 156, 18, 0.2);
+            position: absolute;
+            top: 10px;
+            right: 15px;
+        }
+        
+        .step-title {
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: #f39c12;
+            margin-bottom: 1rem;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .step-content {
+            position: relative;
+            z-index: 1;
+        }
+        
+        .tip-box {
+            background-color: #fef5e7;
+            border-left: 4px solid #f39c12;
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 0 8px 8px 0;
+        }
+        
+        .tip-title {
+            font-weight: bold;
+            color: #f39c12;
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+        }
+        
+        .tip-title::before {
+            content: '💡';
+            margin-right: 0.5rem;
+        }
+        
+        .faq-container {
+            margin: 2rem 0;
+        }
+        
+        .faq-item {
+            margin-bottom: 1.5rem;
+            border-bottom: 1px solid #f0f0f0;
+            padding-bottom: 1.5rem;
+        }
+        
+        .faq-question {
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: flex-start;
+        }
+        
+        .faq-question::before {
+            content: 'Q:';
+            color: #f39c12;
+            font-weight: bold;
+            margin-right: 0.5rem;
+        }
+        
+        .faq-answer {
+            padding-left: 1.5rem;
+            position: relative;
+        }
+        
+        .faq-answer::before {
+            content: 'A:';
+            color: #0077b6;
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+        }
+        
+        /* 数据来源页面增强样式 */
+        .data-section {
+            position: relative;
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+            border-radius: 8px;
+            background-color: #f0f6f0;
+            overflow: hidden;
+        }
+        
+        .data-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            background: linear-gradient(90deg, #27ae60, #2ecc71);
+        }
+        
+        .data-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1.5rem;
+        }
+        
+        .data-icon {
+            width: 50px;
+            height: 50px;
+            background-color: #27ae60;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 1rem;
+            color: white;
+            font-size: 1.5rem;
+        }
+        
+        .data-title {
+            font-size: 1.5rem;
+            color: #27ae60;
+            margin: 0;
+        }
+        
+        .data-card {
+            background-color: white;
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s;
+        }
+        
+        .data-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .data-card-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px solid #f0f0f0;
+        }
+        
+        .data-card-icon {
+            width: 40px;
+            height: 40px;
+            background-color: #e8f5e9;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 1rem;
+            color: #27ae60;
+            font-size: 1.2rem;
+        }
+        
+        .data-card-title {
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: #27ae60;
+            margin: 0;
+        }
+        
+        .data-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+        
+        .reference-list {
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-top: 2rem;
+        }
+        
+        .reference-item {
+            margin-bottom: 1rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid #f0f0f0;
+        }
+        
+        .reference-item:last-child {
+            margin-bottom: 0;
+            padding-bottom: 0;
+            border-bottom: none;
+        }
+        
         /* 联系表单 */
         .contact-form {
             margin-top: 2rem;
@@ -484,6 +894,18 @@
             
             .chart {
                 height: 300px;
+            }
+            
+            .company-profile {
+                flex-direction: column;
+            }
+            
+            .step-container {
+                flex-direction: column;
+            }
+            
+            .data-grid {
+                grid-template-columns: 1fr;
             }
         }
     </style>
@@ -586,131 +1008,441 @@
         <!-- 关于我们页面 -->
         <div id="about-page" class="content-page">
             <h2>关于河南太能控股</h2>
-            <p>河南太能电气股份有限公司是河南省领先的综合能源服务提供商，业务涵盖从发电到用电、从智慧城市到智慧家庭、从互联网+到新能源，形成了绿色能源、电子商务、传统电力水力三大核心板块。公司先后被评为省级高新技术企业、科技型中小企业、双软企业、电子商务企业。</p>
             
-            <h3>公司简介</h3>
-            <p>河南太能电气股份有限公司成立于2011年，是郑东新区第一家新三板挂牌企业。</p>
-            <p>太能电气抓住电力改革的机遇，着手开展售电业务和光伏扶贫项目，并建立光伏电站示范基地。网络时代的到来，加快了互联网与传统行业的结合，建立了行业垂直电子商务平台—电力电，旨在破除行业垄断，规范化市场运作，提升公司市场占有率。</p>
+            <div class="about-section">
+                <div class="about-header">
+                    <div class="about-icon">🏢</div>
+                    <h3 class="about-title">公司概览</h3>
+                </div>
+                
+                <div class="company-profile">
+                    <div class="profile-text">
+                        <p>太能控股围绕2060年实现碳中和为远景目标，立足能源互联网和数字经济两大核心产业，以技术、资金、人才为核心保障，坚持运用"IABCDGN"（物联网、人工智能、区块链、大数据、云计算、5G、虚拟现实、数字孪生）等数字化技术；坚持运用数字化金融赋能产业，设立数字经济发展基金；坚持建立健全数字化人才队伍，打造6个1数字工程（打造Open Flow One数字化平台，应用于建设数字政府、创建数字园区、共建数字生态、 设立数字基金、孵化数字企业、数字赋能产业），推进数字产业化和产业数字化，为赋能数字产业、贡献数字中国、影响数字世界而努力奋斗。</p>
+                        
+                        <p>太能控股在聚焦数字产业，打造全国数字经济产业示范区的同时，汇集了大批数字行业龙头企业，共建数字共享创新平台，联合华为、商汤科技、优刻得（688158）、大华股份（002236）、安恒信息（688023）、新开普（300248）、中衡设计（603017）等100多家数字经济行业龙头企业和上市公司，签订合作协议，成立数字经济生态创新中心，共同赋能数字经济产业链条，服务区域经济发展。</p>
+                    </div>
+                    
+                    <div class="profile-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">100+</span>
+                            <span class="stat-label">合作伙伴</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">2060</span>
+                            <span class="stat-label">碳中和目标年</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">6</span>
+                            <span class="stat-label">数字工程</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
             
-            <h3>业务范围</h3>
-            <p>公司自主研发的中低压输配电成套设备、智能电力元器件和绿色智慧城市监控系统及能效管理系统等产品被广泛应用于电力、化工、冶金、市政建设、建筑、环保等众领域，为行业内建设提供全方位系统性解决方案。</p>
+            <div class="about-section">
+                <div class="about-header">
+                    <div class="about-icon">🔍</div>
+                    <h3 class="about-title">业务范围</h3>
+                </div>
+                
+                <div class="business-story">
+                    <p>在未来能源与数字化的交汇处，太能控股描绘了一幅宏伟的蓝图。这个故事始于一个远大的梦想——到2060年实现碳中和，这是他们旅程的终极目的地，也是第一个重要里程碑。</p>
+                    
+                    <p>为了实现这个梦想，太能控股选择了两条并行的道路：一条是能源互联网之路，连接着传统与创新的能源世界；另一条是数字经济之路，开启着数据驱动的无限可能。这两条道路相互交织，共同构成了公司前进的基础。</p>
+                    
+                    <p>在这段旅程中，太能控股携带了三件宝贵的装备：充足的资金作为动力，尖端的技术作为工具，以及优秀的人才作为灵魂。这三大核心保障如同坚实的盾牌，为公司抵御风险，开拓前路。</p>
+                    
+                    <p>公司的队伍中，有着特殊的"四知型人才"：他们知书达理，学识渊博且为人处世得体；知难而进，面对挑战从不退缩；知恩图报，常怀感恩之心；知行合一，言行一致、理论与实践相结合。这些人才是公司最宝贵的财富。</p>
+                    
+                    <p>在前行的道路上，太能控股遵循着五大发展理念的指引：数字化创新发展，不断突破边界；数字化协调发展，平衡各方需求；数字化绿色发展，守护生态环境；数字化开放发展，拥抱全球合作；数字化共享发展，让成果惠及众人。</p>
+                    
+                    <p>最终，这个故事汇聚成"六个一数字工程"的壮丽篇章：打造Open Flow One数字化平台，应用于建设数字政府、创建数字园区、共建数字生态、设立数字基金、孵化数字企业、数字赋能产业。这六大工程如同六颗明亮的星辰，照亮太能控股及其合作伙伴的未来之路。</p>
+                </div>
+            </div>
             
-            <h3>企业文化</h3>
-            <p><strong>企业目标：</strong>在电力能源行业领域中坚持创新进取、攻克科技难关，实现实业兴国。</p>
-            <p><strong>企业价值观：</strong>热情、开放、直接、高效</p>
-            <p><strong>企业精神：</strong>居安思危，自强不息。</p>
+            <div class="about-section">
+                <div class="about-header">
+                    <div class="about-icon">🌱</div>
+                    <h3 class="about-title">企业文化</h3>
+                </div>
+                
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-year">核心价值观</div>
+                        <p>作为数字时代的产业合伙人，太能始终秉承"爱国、敬业、诚信、友善"的核心价值观，努力为社会、城市、客户、投资者、合作伙伴创造价值，致力发展成为中国最好的"能源互联网"与"数字经济"产业领域创新发展运营商。</p>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-year">使命</div>
+                        <p>赋能数字产业、贡献数字中国、影响数字世界</p>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-year">愿景</div>
+                        <p>成为中国最好的"能源互联网"与"数字经济"产业领域创新发展运营商</p>
+                    </div>
+                </div>
+            </div>
             
-            <h3>Yile System Dynamics项目介绍</h3>
-            <p>Yile System Dynamics气候模拟器是河南省太能控股推出的一款基于国际先进气候模型的本地化气候政策模拟工具。该项目旨在为政策制定者、教育工作者、企业和公众提供一个直观的平台，用于测试和探索不同气候政策的影响。</p>
-            <p>我们与国际气候研究机构合作，将全球领先的气候模拟技术与中国国情相结合，开发出这款适合中国用户的气候模拟工具。通过Yile System Dynamics，用户可以探索各种政策选择对能源结构、温室气体排放和全球温度的影响，从而为制定更有效的气候政策提供科学依据。</p>
+            <div class="about-section">
+                <div class="about-header">
+                    <div class="about-icon">🌐</div>
+                    <h3 class="about-title">Yile System Dynamics项目介绍</h3>
+                </div>
+                
+                <p>Yile System Dynamics气候模拟器是河南省太能控股推出的一款基于国际先进气候模型的本地化气候政策模拟工具。该项目旨在为政策制定者、教育工作者、企业和公众提供一个直观的平台，用于测试和探索不同气候政策的影响。</p>
+                
+                <p>我们与国际气候研究机构合作，将全球领先的气候模拟技术与中国国情相结合，开发出这款适合中国用户的气候模拟工具。通过Yile System Dynamics，用户可以探索各种政策选择对能源结构、温室气体排放和全球温度的影响，从而为制定更有效的气候政策提供科学依据。</p>
+            </div>
         </div>
         
         <!-- 使用指南页面 -->
         <div id="guide-page" class="content-page">
             <h2>Yile System Dynamics 使用指南</h2>
-            <p>欢迎使用Yile System Dynamics气候模拟器，本指南将帮助您了解如何使用该工具探索不同气候政策的影响。</p>
             
-            <h3>基本操作说明</h3>
-            <p><strong>模拟器界面概述：</strong>Yile System Dynamics模拟器界面主要由三部分组成：顶部的温度预测显示、中部的图表区域和底部的参数调节区域。温度预测显示实时反映您所设置的政策组合对2100年全球温度的影响；图表区域展示能源结构和温室气体排放的变化趋势；参数调节区域允许您调整各种政策参数。</p>
-            <p><strong>参数调节滑块使用方法：</strong>通过移动滑块，您可以调整不同政策的力度。向右移动表示加强政策干预（增加百分比），向左移动表示减弱政策干预（减少百分比）。每个滑块旁边都有状态指示，显示当前设置相对于基准情景的具体变化百分比。</p>
-            <p><strong>图表解读方法：</strong>左侧的能源结构图表显示不同能源类型在总能源供应中的占比变化趋势，右侧的温室气体排放图表显示净排放量的变化趋势。图表横轴为时间（2000-2100年），纵轴分别为能源供应量（EJ/年）和温室气体排放量（GtCO2e/年）。</p>
-            <p><strong>情景保存与分享功能：</strong>点击顶部导航栏的"分享您的场景"按钮，可以生成一个包含您当前所有参数设置的链接，方便您保存或与他人分享您的模拟结果。</p>
+            <div class="guide-section">
+                <div class="guide-header">
+                    <div class="guide-icon">📖</div>
+                    <h3 class="guide-title">基本操作说明</h3>
+                </div>
+                
+                <p>欢迎使用Yile System Dynamics气候模拟器，本指南将帮助您了解如何使用该工具探索不同气候政策的影响。</p>
+                
+                <div class="step-container">
+                    <div class="step-card">
+                        <div class="step-number">1</div>
+                        <h4 class="step-title">模拟器界面概述</h4>
+                        <div class="step-content">
+                            <p>Yile System Dynamics模拟器界面主要由三部分组成：顶部的温度预测显示、中部的图表区域和底部的参数调节区域。温度预测显示实时反映您所设置的政策组合对2100年全球温度的影响；图表区域展示能源结构和温室气体排放的变化趋势；参数调节区域允许您调整各种政策参数。</p>
+                        </div>
+                    </div>
+                    
+                    <div class="step-card">
+                        <div class="step-number">2</div>
+                        <h4 class="step-title">参数调节滑块使用方法</h4>
+                        <div class="step-content">
+                            <p>通过移动滑块，您可以调整不同政策的力度。向右移动表示加强政策干预（增加百分比），向左移动表示减弱政策干预（减少百分比）。每个滑块旁边都有状态指示，显示当前设置相对于基准情景的具体变化百分比。</p>
+                        </div>
+                    </div>
+                    
+                    <div class="step-card">
+                        <div class="step-number">3</div>
+                        <h4 class="step-title">图表解读方法</h4>
+                        <div class="step-content">
+                            <p>左侧的能源结构图表显示不同能源类型在总能源供应中的占比变化趋势，右侧的温室气体排放图表显示净排放量的变化趋势。图表横轴为时间（2000-2100年），纵轴分别为能源供应量（EJ/年）和温室气体排放量（GtCO2e/年）。</p>
+                        </div>
+                    </div>
+                    
+                    <div class="step-card">
+                        <div class="step-number">4</div>
+                        <h4 class="step-title">情景保存与分享功能</h4>
+                        <div class="step-content">
+                            <p>点击顶部导航栏的"分享您的场景"按钮，可以生成一个包含您当前所有参数设置的链接，方便您保存或与他人分享您的模拟结果。</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="tip-box">
+                    <div class="tip-title">使用小贴士</div>
+                    <p>尝试先调整单个参数观察其影响，然后再组合多个参数，这样可以更好地理解不同政策之间的相互作用。</p>
+                </div>
+            </div>
             
-            <h3>主要功能模块说明</h3>
-            <p><strong>能源供应模块：</strong>包括煤炭、石油、天然气、可再生能源、核能和生物能源等参数调节，允许您模拟不同能源政策对能源结构的影响。例如，您可以通过提高可再生能源补贴或对化石燃料征税来改变能源结构。</p>
-            <p><strong>交通与建筑模块：</strong>包括能源效率和电气化两个关键参数，允许您模拟提高终端用能效率和推广电气化对能源消费和排放的影响。</p>
-            <p><strong>碳管理模块：</strong>包括碳价格和碳捕获两个参数，允许您模拟碳定价政策和碳捕获技术的应用对减排的影响。</p>
-            <p><strong>温度预测显示与解读：</strong>顶部的温度预测显示实时反映您所设置的政策组合对2100年全球温度上升的影响。温度以摄氏度为单位，表示相对于工业化前水平的温度上升。</p>
+            <div class="guide-section">
+                <div class="guide-header">
+                    <div class="guide-icon">🔧</div>
+                    <h3 class="guide-title">主要功能模块说明</h3>
+                </div>
+                
+                <div class="step-container">
+                    <div class="step-card">
+                        <div class="step-number">1</div>
+                        <h4 class="step-title">能源供应模块</h4>
+                        <div class="step-content">
+                            <p>包括煤炭、石油、天然气、可再生能源、核能和生物能源等参数调节，允许您模拟不同能源政策对能源结构的影响。例如，您可以通过提高可再生能源补贴或对化石燃料征税来改变能源结构。</p>
+                        </div>
+                    </div>
+                    
+                    <div class="step-card">
+                        <div class="step-number">2</div>
+                        <h4 class="step-title">交通与建筑模块</h4>
+                        <div class="step-content">
+                            <p>包括能源效率和电气化两个关键参数，允许您模拟提高终端用能效率和推广电气化对能源消费和排放的影响。</p>
+                        </div>
+                    </div>
+                    
+                    <div class="step-card">
+                        <div class="step-number">3</div>
+                        <h4 class="step-title">碳管理模块</h4>
+                        <div class="step-content">
+                            <p>包括碳价格和碳捕获两个参数，允许您模拟碳定价政策和碳捕获技术的应用对减排的影响。</p>
+                        </div>
+                    </div>
+                    
+                    <div class="step-card">
+                        <div class="step-number">4</div>
+                        <h4 class="step-title">温度预测显示与解读</h4>
+                        <div class="step-content">
+                            <p>顶部的温度预测显示实时反映您所设置的政策组合对2100年全球温度上升的影响。温度以摄氏度为单位，表示相对于工业化前水平的温度上升。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
             
-            <h3>常见问题解答</h3>
-            <p><strong>如何理解温度预测结果？</strong>温度预测结果表示在您设置的政策组合下，到2100年全球平均温度相对于工业化前水平的上升幅度。根据《巴黎协定》，国际社会的目标是将全球温度上升控制在2°C以内，并努力限制在1.5°C以内。</p>
-            <p><strong>如何比较不同政策组合的效果？</strong>您可以先设置一组政策参数，记录温度预测结果，然后调整参数设置另一组政策，再比较两组政策下的温度预测结果和能源结构、排放趋势的差异。</p>
-            <p><strong>如何保存和分享我的模拟结果？</strong>点击顶部导航栏的"分享您的场景"按钮，系统会生成一个包含您当前所有参数设置的链接，您可以保存这个链接或分享给他人。</p>
-            <p><strong>模拟器数据更新频率是多少？</strong>我们会定期更新模拟器的基础数据和模型参数，以反映最新的科学研究成果和全球气候政策变化。每次更新都会在"数据来源"页面公布。</p>
+            <div class="guide-section">
+                <div class="guide-header">
+                    <div class="guide-icon">❓</div>
+                    <h3 class="guide-title">常见问题解答</h3>
+                </div>
+                
+                <div class="faq-container">
+                    <div class="faq-item">
+                        <div class="faq-question">如何理解温度预测结果？</div>
+                        <div class="faq-answer">
+                            <p>温度预测结果表示在您设置的政策组合下，到2100年全球平均温度相对于工业化前水平的上升幅度。根据《巴黎协定》，国际社会的目标是将全球温度上升控制在2°C以内，并努力限制在1.5°C以内。</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">如何比较不同政策组合的效果？</div>
+                        <div class="faq-answer">
+                            <p>您可以先设置一组政策参数，记录温度预测结果，然后调整参数设置另一组政策，再比较两组政策下的温度预测结果和能源结构、排放趋势的差异。</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">如何保存和分享我的模拟结果？</div>
+                        <div class="faq-answer">
+                            <p>点击顶部导航栏的"分享您的场景"按钮，系统会生成一个包含您当前所有参数设置的链接，您可以保存这个链接或分享给他人。</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">模拟器数据更新频率是多少？</div>
+                        <div class="faq-answer">
+                            <p>我们会定期更新模拟器的基础数据和模型参数，以反映最新的科学研究成果和全球气候政策变化。每次更新都会在"数据来源"页面公布。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
         
         <!-- 数据来源页面 -->
         <div id="data-page" class="content-page">
             <h2>Yile System Dynamics 数据来源</h2>
-            <p>Yile System Dynamics气候模拟器基于权威科学数据和模型，本页面详细说明了我们使用的数据来源和模型方法。</p>
             
-            <h3>核心数据来源</h3>
-            <p><strong>政府间气候变化专门委员会(IPCC)报告：</strong>我们的气候物理模型和温度预测算法主要基于IPCC第六次评估报告(AR6)的科学发现和模型参数。IPCC是全球气候变化研究的权威机构，其报告代表了国际科学界对气候变化的共识。</p>
-            <p><strong>国际能源署(IEA)能源数据：</strong>我们的能源系统模型和基准情景主要基于IEA发布的《世界能源展望》(World Energy Outlook)和《能源技术展望》(Energy Technology Perspectives)报告中的数据和预测。</p>
-            <p><strong>中国国家气候变化中心数据：</strong>为了更好地反映中国国情，我们还参考了中国国家气候变化中心发布的国家温室气体清单、能源统计和气候变化影响评估等数据。</p>
-            <p><strong>全球碳计划(Global Carbon Project)排放数据：</strong>我们的历史排放数据和碳循环模型参数主要来自全球碳计划发布的全球碳预算报告，该报告提供了最全面的全球碳排放和碳汇数据。</p>
+            <div class="data-section">
+                <div class="data-header">
+                    <div class="data-icon">📊</div>
+                    <h3 class="data-title">核心数据来源</h3>
+                </div>
+                
+                <p>Yile System Dynamics气候模拟器基于权威科学数据和模型，本页面详细说明了我们使用的数据来源和模型方法。</p>
+                
+                <div class="data-grid">
+                    <div class="data-card">
+                        <div class="data-card-header">
+                            <div class="data-card-icon">🌍</div>
+                            <h4 class="data-card-title">IPCC报告</h4>
+                        </div>
+                        <p>我们的气候物理模型和温度预测算法主要基于IPCC第六次评估报告(AR6)的科学发现和模型参数。IPCC是全球气候变化研究的权威机构，其报告代表了国际科学界对气候变化的共识。</p>
+                    </div>
+                    
+                    <div class="data-card">
+                        <div class="data-card-header">
+                            <div class="data-card-icon">⚡</div>
+                            <h4 class="data-card-title">IEA数据</h4>
+                        </div>
+                        <p>我们的能源系统模型和基准情景参数主要来自IEA的《世界能源展望》和《能源技术展望》报告。这些数据包括全球和区域能源供需、能源技术成本和性能、能源政策等信息。</p>
+                    </div>
+                    
+                    <div class="data-card">
+                        <div class="data-card-header">
+                            <div class="data-card-icon">🇨🇳</div>
+                            <h4 class="data-card-title">中国国家统计局和能源局数据</h4>
+                        </div>
+                        <p>为了更好地反映中国国情，我们使用了中国国家统计局和国家能源局发布的能源统计数据，包括能源生产和消费结构、碳排放数据等。</p>
+                    </div>
+                    
+                    <div class="data-card">
+                        <div class="data-card-header">
+                            <div class="data-card-icon">🌱</div>
+                            <h4 class="data-card-title">全球碳计划</h4>
+                        </div>
+                        <p>我们的碳循环模型和历史排放数据主要来自全球碳计划的年度碳预算报告，该报告提供了全球和区域温室气体排放的权威数据。</p>
+                    </div>
+                </div>
+            </div>
             
-            <h3>模型方法学</h3>
-            <p><strong>系统动力学模型简介：</strong>Yile System Dynamics采用系统动力学方法构建模型，这种方法能够模拟复杂系统中的反馈循环、时滞和非线性关系。我们的模型包含能源、经济、人口、土地利用和气候物理等多个子系统，以及它们之间的相互作用。</p>
-            <p><strong>气候物理模型说明：</strong>我们的气候物理模型基于碳循环-气候反馈框架，考虑了温室气体浓度、辐射强迫、气候敏感度和海洋热吸收等关键因素。模型能够模拟不同排放路径下的全球温度变化。</p>
-            <p><strong>社会经济情景设定：</strong>我们的基准情景采用"现有政策"假设，即只考虑已经实施或明确承诺的政策措施。用户可以通过调整参数来模拟额外政策措施的影响。</p>
-            <p><strong>模型校准与验证方法：</strong>我们的模型经过了严格的校准和验证过程，包括与历史数据的拟合、与其他综合评估模型的比较，以及敏感性和不确定性分析。</p>
+            <div class="data-section">
+                <div class="data-header">
+                    <div class="data-icon">🧮</div>
+                    <h3 class="data-title">模型方法学</h3>
+                </div>
+                
+                <div class="data-grid">
+                    <div class="data-card">
+                        <div class="data-card-header">
+                            <div class="data-card-icon">🔄</div>
+                            <h4 class="data-card-title">系统动力学方法</h4>
+                        </div>
+                        <p>Yile System Dynamics采用系统动力学方法构建模型，这种方法特别适合模拟复杂系统中的反馈循环和时间延迟，能够更好地捕捉能源-经济-气候系统的复杂动态。</p>
+                    </div>
+                    
+                    <div class="data-card">
+                        <div class="data-card-header">
+                            <div class="data-card-icon">🔗</div>
+                            <h4 class="data-card-title">集成评估模型框架</h4>
+                        </div>
+                        <p>我们的模型基于集成评估模型(IAM)框架，将能源系统、经济系统和气候系统集成在一起，能够评估不同政策对这三个系统的综合影响。</p>
+                    </div>
+                    
+                    <div class="data-card">
+                        <div class="data-card-header">
+                            <div class="data-card-icon">🌐</div>
+                            <h4 class="data-card-title">多区域模型结构</h4>
+                        </div>
+                        <p>模型将全球分为多个区域，包括中国、美国、欧盟、印度等主要经济体和排放国，每个区域都有其特定的能源结构、经济特征和减排潜力。</p>
+                    </div>
+                    
+                    <div class="data-card">
+                        <div class="data-card-header">
+                            <div class="data-card-icon">⚖️</div>
+                            <h4 class="data-card-title">政策参数校准</h4>
+                        </div>
+                        <p>模型中的政策参数经过校准，确保其反映真实世界中政策干预的效果。校准过程使用了历史数据和专家判断，并通过敏感性分析验证了参数的合理性。</p>
+                    </div>
+                </div>
+            </div>
             
-            <h3>数据更新与局限性</h3>
-            <p><strong>数据更新周期说明：</strong>我们会根据IPCC、IEA等机构发布的最新报告和数据，定期更新模型参数和基准情景，通常每1-2年进行一次全面更新。</p>
-            <p><strong>模型不确定性说明：</strong>气候系统和能源-经济系统都是高度复杂的系统，存在固有的不确定性。我们的模型结果应被视为可能的未来情景，而非精确预测。</p>
-            <p><strong>使用局限性提示：</strong>Yile System Dynamics主要用于探索全球和国家层面的气候政策影响，不适合详细分析地区或行业层面的具体问题。模型也简化了某些复杂过程，如技术创新的动态过程和社会行为变化。</p>
-            <p><strong>进一步研究建议：</strong>对于需要更详细分析的问题，建议结合其他专业模型和工具，如能源系统优化模型、计算一般均衡模型或详细的气候模式等。</p>
+            <div class="data-section">
+                <div class="data-header">
+                    <div class="data-icon">🔄</div>
+                    <h3 class="data-title">数据更新与验证</h3>
+                </div>
+                
+                <div class="data-grid">
+                    <div class="data-card">
+                        <div class="data-card-header">
+                            <div class="data-card-icon">📅</div>
+                            <h4 class="data-card-title">定期更新</h4>
+                        </div>
+                        <p>我们每年更新一次基础数据和模型参数，以反映最新的科学研究成果、技术发展和政策变化。</p>
+                    </div>
+                    
+                    <div class="data-card">
+                        <div class="data-card-header">
+                            <div class="data-card-icon">✅</div>
+                            <h4 class="data-card-title">模型验证</h4>
+                        </div>
+                        <p>我们通过将模型结果与历史数据进行比较，验证模型的准确性和可靠性。验证过程包括能源结构、排放趋势和温度变化等多个方面。</p>
+                    </div>
+                    
+                    <div class="data-card">
+                        <div class="data-card-header">
+                            <div class="data-card-icon">🔍</div>
+                            <h4 class="data-card-title">不确定性分析</h4>
+                        </div>
+                        <p>我们进行了广泛的不确定性分析，以了解关键参数变化对模型结果的影响。这些分析结果帮助用户理解预测的可靠性范围。</p>
+                    </div>
+                    
+                    <div class="data-card">
+                        <div class="data-card-header">
+                            <div class="data-card-icon">👨‍🔬</div>
+                            <h4 class="data-card-title">专家评审</h4>
+                        </div>
+                        <p>我们的模型和数据经过国内外气候和能源领域专家的评审，确保其科学性和可靠性。</p>
+                    </div>
+                </div>
+                
+                <div class="reference-list">
+                    <h4>数据来源参考文献</h4>
+                    <div class="reference-item">
+                        <p>1. IPCC, 2021: Climate Change 2021: The Physical Science Basis. Contribution of Working Group I to the Sixth Assessment Report of the Intergovernmental Panel on Climate Change.</p>
+                    </div>
+                    <div class="reference-item">
+                        <p>2. IEA, 2023: World Energy Outlook 2023. International Energy Agency, Paris.</p>
+                    </div>
+                    <div class="reference-item">
+                        <p>3. 中华人民共和国国家统计局, 2023: 中国能源统计年鉴2023.</p>
+                    </div>
+                    <div class="reference-item">
+                        <p>4. Global Carbon Project, 2023: Global Carbon Budget 2023.</p>
+                    </div>
+                    <div class="reference-item">
+                        <p>5. Friedlingstein, P., et al., 2023: Global Carbon Budget 2023. Earth System Science Data.</p>
+                    </div>
+                    <div class="reference-item">
+                        <p>6. 中华人民共和国生态环境部, 2023: 中国应对气候变化的政策与行动2023年度报告.</p>
+                    </div>
+                </div>
+            </div>
         </div>
         
         <!-- 联系我们页面 -->
         <div id="contact-page" class="content-page">
-            <h2>联系河南太能控股</h2>
-            <p>感谢您对Yile System Dynamics气候模拟器的关注，如有任何问题或建议，欢迎与我们联系。</p>
+            <h2>联系我们</h2>
+            <p>如果您对Yile System Dynamics气候模拟器有任何问题、建议或合作意向，欢迎通过以下方式联系我们。我们的团队将竭诚为您提供支持和帮助。</p>
             
             <h3>联系方式</h3>
-            <div style="text-align: center; margin: 20px 0;">
-
+            <p><strong>地址：</strong>北京市朝阳区小营路15号中乐大厦5层</p>
+            <p><strong>电话：</strong>178-8883-1536</p>
+            <p><strong>邮箱：</strong>daiyile396@gmail.com</p>
+            <p><strong>官方网站：</strong>http://www.tnkg.com/</p>
+            
+            <h3>反馈与建议</h3>
+            <p>我们非常重视用户的反馈和建议，它们对我们改进产品和服务至关重要。如果您在使用过程中遇到任何问题，或有任何改进建议，请通过以下表单告诉我们。</p>
+            
+            <div class="contact-form">
+                <form id="feedback-form">
+                    <div class="form-group">
+                        <label for="name">姓名</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">邮箱</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="organization">单位/组织</label>
+                        <input type="text" id="organization" name="organization">
+                    </div>
+                    <div class="form-group">
+                        <label for="feedback-type">反馈类型</label>
+                        <select id="feedback-type" name="feedback-type" required>
+                            <option value="">请选择</option>
+                            <option value="bug">问题报告</option>
+                            <option value="suggestion">功能建议</option>
+                            <option value="cooperation">合作意向</option>
+                            <option value="other">其他</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">详细内容</label>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">提交反馈</button>
+                </form>
             </div>
-            <p><strong>公司地址：</strong>河南省郑州市郑东新区商务外环路10号中原广发金融大厦</p>
-            <p><strong>电子邮箱：</strong>daiyile396@gmail.com</p>
-            <p><strong>社交媒体：</strong>微信公众号：太能控股</p>
             
-            <h3>反馈表单</h3>
-            <form class="contact-form">
-                <div class="form-group">
-                    <label for="name">姓名</label>
-                    <input type="text" id="name" name="name" required>
-                </div>
-                <div class="form-group">
-                    <label for="email">电子邮箱</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
-                <div class="form-group">
-                    <label for="subject">主题</label>
-                    <select id="subject" name="subject">
-                        <option value="feedback">问题反馈</option>
-                        <option value="cooperation">合作咨询</option>
-                        <option value="media">媒体联系</option>
-                        <option value="other">其他</option>
-                    </select>
-                </div>
-                <div class="form-group">
-                    <label for="message">留言内容</label>
-                    <textarea id="message" name="message" required></textarea>
-                </div>
-                <button type="submit" class="submit-btn">提交</button>
-            </form>
+            <h3>关注我们</h3>
+            <p>关注我们的官方微信公众号和微博，获取最新的气候科学知识、政策动态和产品更新。</p>
+            <p><strong>微信公众号：</strong>太能控股</p>
             
-            <h3>常见联系场景</h3>
-            <p><strong>技术支持与问题反馈：</strong>如果您在使用Yile System Dynamics过程中遇到技术问题或有功能建议，请通过上述联系方式或反馈表单与我们的技术团队联系。</p>
-            <p><strong>合作与项目咨询：</strong>如果您代表政府机构、企业、学校或研究机构，希望与我们就气候模拟、能源转型或可持续发展领域开展合作，请联系我们的合作发展部门。</p>
-            <p><strong>媒体采访与报道：</strong>媒体朋友如需采访或报道相关内容，请联系我们的公共关系部门，我们将及时回应您的需求。</p>
-            <p><strong>招聘与人才加入：</strong>我们始终欢迎优秀人才的加入，特别是在气候科学、能源技术、数据分析和软件开发等领域有专长的人才。请将您的简历发送至daiyile396@gmail.com。</p>
         </div>
     </div>
     
     <!-- 页脚 -->
     <footer class="footer">
-        <div class="footer-logo">Yile En-ROADS</div>
-        <p>河南省太能控股出品</p>
+        <div class="footer-logo">Yile System Dynamics</div>
+        <p>河南太能控股出品</p>
         <div class="footer-links">
             <a href="#" data-page="about">关于我们</a>
             <a href="#" data-page="guide">使用指南</a>
             <a href="#" data-page="data">数据来源</a>
             <a href="#" data-page="contact">联系我们</a>
         </div>
-        <div class="copyright">© 2025 河南省太能控股 版权所有</div>
+        <div class="copyright">© 2025 河南太能控股 版权所有</div>
     </footer>
     
     <!-- 引入Chart.js -->
@@ -802,36 +1534,36 @@
                         {
                             label: '石油',
                             data: [120, 140, 130, 110, 90, 70],
-                            backgroundColor: 'rgba(219, 68, 55, 0.5)',
-                            borderColor: 'rgba(219, 68, 55, 1)',
+                            backgroundColor: 'rgba(58, 83, 155, 0.5)',
+                            borderColor: 'rgba(58, 83, 155, 1)',
                             borderWidth: 1
                         },
                         {
                             label: '天然气',
-                            data: [80, 100, 120, 130, 120, 100],
-                            backgroundColor: 'rgba(66, 133, 244, 0.5)',
-                            borderColor: 'rgba(66, 133, 244, 1)',
+                            data: [80, 110, 130, 120, 100, 80],
+                            backgroundColor: 'rgba(223, 120, 87, 0.5)',
+                            borderColor: 'rgba(223, 120, 87, 1)',
                             borderWidth: 1
                         },
                         {
                             label: '可再生能源',
                             data: [20, 40, 80, 120, 160, 200],
-                            backgroundColor: 'rgba(52, 168, 83, 0.5)',
-                            borderColor: 'rgba(52, 168, 83, 1)',
+                            backgroundColor: 'rgba(46, 204, 113, 0.5)',
+                            borderColor: 'rgba(46, 204, 113, 1)',
                             borderWidth: 1
                         },
                         {
                             label: '核能',
-                            data: [20, 30, 40, 50, 60, 70],
-                            backgroundColor: 'rgba(156, 39, 176, 0.5)',
-                            borderColor: 'rgba(156, 39, 176, 1)',
+                            data: [10, 20, 30, 40, 50, 60],
+                            backgroundColor: 'rgba(142, 68, 173, 0.5)',
+                            borderColor: 'rgba(142, 68, 173, 1)',
                             borderWidth: 1
                         },
                         {
                             label: '生物能源',
-                            data: [10, 20, 30, 40, 50, 60],
-                            backgroundColor: 'rgba(251, 140, 171, 0.5)',
-                            borderColor: 'rgba(251, 140, 171, 1)',
+                            data: [5, 10, 20, 30, 40, 50],
+                            backgroundColor: 'rgba(241, 196, 15, 0.5)',
+                            borderColor: 'rgba(241, 196, 15, 1)',
                             borderWidth: 1
                         }
                     ]
@@ -844,24 +1576,25 @@
                             beginAtZero: true,
                             title: {
                                 display: true,
-                                text: 'Exajoules/year'
+                                text: '能源供应 (EJ/年)'
                             }
                         },
                         x: {
-                            ticks: {
-                                padding: 10 // 增加x轴标签的padding
+                            title: {
+                                display: true,
+                                text: '年份'
                             }
                         }
                     },
-                    layout: {
-                        padding: {
-                            bottom: 15 // 增加图表底部内边距
+                    plugins: {
+                        legend: {
+                            position: 'bottom'
                         }
                     }
                 }
             });
             
-            // 排放量图表
+            // 排放图表
             const emissionsCtx = document.getElementById('emissions-chart').getContext('2d');
             const emissionsChart = new Chart(emissionsCtx, {
                 type: 'line',
@@ -869,10 +1602,10 @@
                     labels: ['2000', '2020', '2040', '2060', '2080', '2100'],
                     datasets: [
                         {
-                            label: '排放量',
-                            data: [40, 58, 70, 65, 55, 45],
-                            backgroundColor: 'rgba(255, 0, 0, 0.2)',
-                            borderColor: 'rgba(255, 0, 0, 1)',
+                            label: '净排放量',
+                            data: [30, 40, 35, 25, 15, 5],
+                            backgroundColor: 'rgba(231, 76, 60, 0.5)',
+                            borderColor: 'rgba(231, 76, 60, 1)',
                             borderWidth: 2,
                             fill: true
                         }
@@ -883,16 +1616,28 @@
                     maintainAspectRatio: false,
                     scales: {
                         y: {
+                            beginAtZero: true,
                             title: {
                                 display: true,
-                                text: 'Gigatons CO2 equivalent/year'
+                                text: '温室气体排放量 (GtCO2e/年)'
                             }
+                        },
+                        x: {
+                            title: {
+                                display: true,
+                                text: '年份'
+                            }
+                        }
+                    },
+                    plugins: {
+                        legend: {
+                            position: 'bottom'
                         }
                     }
                 }
             });
             
-            // 将图表对象存储在全局变量中，以便后续更新
+            // 保存图表实例到全局变量，以便后续更新
             window.energyChart = energyChart;
             window.emissionsChart = emissionsChart;
         }
@@ -900,239 +1645,172 @@
         // 更新滑块状态显示
         function updateSliderStatus(slider) {
             const value = slider.value;
-            const name = slider.getAttribute('data-name');
-            const baseValue = 50; // 基准值
-            const diff = value - baseValue;
-            let statusText = '';
-            let statusClass = '';
+            const statusElement = slider.previousElementSibling.querySelector('.slider-status');
+            const percentage = value - 50;
             
-            if (diff === 0) {
-                statusText = `基准值 (0%)`;
-            } else if (diff > 0) {
-                statusText = `增加 +${diff}%`;
-                statusClass = 'increase';
+            if (percentage === 0) {
+                statusElement.textContent = `基准值 (0%)`;
+                statusElement.className = 'slider-status';
+            } else if (percentage > 0) {
+                statusElement.textContent = `增加 (+${percentage}%)`;
+                statusElement.className = 'slider-status increase';
             } else {
-                statusText = `减少 ${diff}%`;
-                statusClass = 'decrease';
-            }
-            
-            // 更新状态显示
-            const statusElement = slider.parentElement.querySelector('.slider-status');
-            statusElement.textContent = statusText;
-            
-            // 更新状态样式
-            statusElement.className = 'slider-status';
-            if (statusClass) {
-                statusElement.classList.add(statusClass);
+                statusElement.textContent = `减少 (${percentage}%)`;
+                statusElement.className = 'slider-status decrease';
             }
         }
         
-        // 更新温度显示
+        // 更新温度预测
         function updateTemperature() {
             // 获取所有滑块的值
-            const coalValue = document.getElementById('coal-slider').value;
-            const oilValue = document.getElementById('oil-slider').value;
-            const gasValue = document.getElementById('gas-slider').value;
-            const renewablesValue = document.getElementById('renewables-slider').value;
-            const nuclearValue = document.getElementById('nuclear-slider').value;
-            const bioenergyValue = document.getElementById('bioenergy-slider').value;
-            const efficiencyValue = document.getElementById('efficiency-slider').value;
-            const electrificationValue = document.getElementById('electrification-slider').value;
-            const carbonPriceValue = document.getElementById('carbon-price-slider').value;
-            const carbonCaptureValue = document.getElementById('carbon-capture-slider').value;
+            const sliders = document.querySelectorAll('.slider');
+            let totalImpact = 0;
             
-            // 简单算法计算温度（实际应使用更复杂的模型）
-            let temperature = 3.3; // 基准温度
-            
-            // 化石燃料影响（增加温度）
-            temperature += (coalValue - 50) * 0.01;
-            temperature += (oilValue - 50) * 0.008;
-            temperature += (gasValue - 50) * 0.006;
-            
-            // 清洁能源影响（降低温度）
-            temperature -= (renewablesValue - 50) * 0.012;
-            temperature -= (nuclearValue - 50) * 0.008;
-            temperature -= (bioenergyValue - 50) * 0.004;
-            
-            // 效率和电气化影响（降低温度）
-            temperature -= (efficiencyValue - 50) * 0.01;
-            temperature -= (electrificationValue - 50) * 0.008;
-            
-            // 碳管理影响（降低温度）
-            temperature -= (carbonPriceValue - 50) * 0.015;
-            temperature -= (carbonCaptureValue - 50) * 0.01;
-            
-            // 确保温度在合理范围内
-            temperature = Math.max(1.5, Math.min(4.5, temperature));
-            
-            // 更新温度显示
-            document.querySelector('.temperature').innerHTML = '+' + temperature.toFixed(1) + '<span class="temperature-unit">°C</span>';
-        }
-        
-        // 更新能源结构图表
-        function updateEnergyChart() {
-            const energyChart = window.energyChart;
-            
-            // 获取所有滑块的值
-            const coalValue = document.getElementById('coal-slider').value;
-            const oilValue = document.getElementById('oil-slider').value;
-            const gasValue = document.getElementById('gas-slider').value;
-            const renewablesValue = document.getElementById('renewables-slider').value;
-            const nuclearValue = document.getElementById('nuclear-slider').value;
-            const bioenergyValue = document.getElementById('bioenergy-slider').value;
-            
-            // 获取交通与建筑滑块的值
-            const efficiencyValue = document.getElementById('efficiency-slider').value;
-            const electrificationValue = document.getElementById('electrification-slider').value;
-            
-            // 煤炭数据调整
-            energyChart.data.datasets[0].data = [
-                100,
-                150,
-                120 + (coalValue - 50) * 1.5,
-                100 + (coalValue - 50) * 2,
-                80 + (coalValue - 50) * 2.5,
-                60 + (coalValue - 50) * 3
-            ];
-            
-            // 石油数据调整
-            energyChart.data.datasets[1].data = [
-                120,
-                140,
-                130 + (oilValue - 50) * 1.2,
-                110 + (oilValue - 50) * 1.6,
-                90 + (oilValue - 50) * 2,
-                70 + (oilValue - 50) * 2.4
-            ];
-            
-            // 天然气数据调整
-            energyChart.data.datasets[2].data = [
-                80,
-                100,
-                120 + (gasValue - 50) * 1,
-                130 + (gasValue - 50) * 1.4,
-                120 + (gasValue - 50) * 1.8,
-                100 + (gasValue - 50) * 2.2
-            ];
-            
-            // 可再生能源数据调整
-            energyChart.data.datasets[3].data = [
-                20,
-                40,
-                80 + (renewablesValue - 50) * 1.5,
-                120 + (renewablesValue - 50) * 2.5,
-                160 + (renewablesValue - 50) * 3.5,
-                200 + (renewablesValue - 50) * 4.5
-            ];
-            
-            // 核能数据调整
-            energyChart.data.datasets[4].data = [
-                20,
-                30,
-                40 + (nuclearValue - 50) * 0.8,
-                50 + (nuclearValue - 50) * 1.2,
-                60 + (nuclearValue - 50) * 1.6,
-                70 + (nuclearValue - 50) * 2
-            ];
-            
-            // 生物能源数据调整
-            energyChart.data.datasets[5].data = [
-                10,
-                20,
-                30 + (bioenergyValue - 50) * 0.6,
-                40 + (bioenergyValue - 50) * 1,
-                50 + (bioenergyValue - 50) * 1.4,
-                60 + (bioenergyValue - 50) * 1.8
-            ];
-            
-            // 交通与建筑效率影响能源结构
-            // 能效提高会降低所有能源的消耗
-            if (efficiencyValue !== 50) {
-                const efficiencyFactor = (efficiencyValue - 50) * 0.005;
-                for (let i = 0; i < energyChart.data.datasets.length; i++) {
-                    for (let j = 2; j < energyChart.data.datasets[i].data.length; j++) {
-                        energyChart.data.datasets[i].data[j] *= (1 - efficiencyFactor * (j - 1));
-                    }
+            // 计算总体影响
+            sliders.forEach(slider => {
+                const value = slider.value;
+                const percentage = value - 50;
+                const name = slider.getAttribute('data-name');
+                
+                // 根据不同参数设置不同权重
+                let weight = 0.1;
+                if (name === '煤炭' || name === '石油') {
+                    weight = 0.15;
+                } else if (name === '可再生能源' || name === '碳价格') {
+                    weight = 0.2;
                 }
-            }
-            
-            // 电气化影响能源结构
-            // 电气化提高会增加清洁能源消耗，降低化石燃料消耗
-            if (electrificationValue !== 50) {
-                const electrificationFactor = (electrificationValue - 50) * 0.004;
-                // 降低化石燃料（煤炭、石油、天然气）
-                for (let i = 0; i < 3; i++) {
-                    for (let j = 2; j < energyChart.data.datasets[i].data.length; j++) {
-                        energyChart.data.datasets[i].data[j] *= (1 - electrificationFactor * (j - 1));
-                    }
-                }
-                // 增加清洁能源（可再生能源、核能）
-                for (let i = 3; i < 5; i++) {
-                    for (let j = 2; j < energyChart.data.datasets[i].data.length; j++) {
-                        energyChart.data.datasets[i].data[j] *= (1 + electrificationFactor * (j - 1));
-                    }
-                }
-            }
-            
-            // 更新能源图表
-            energyChart.update();
-        }
-        
-        // 更新排放量图表
-        function updateEmissionsChart() {
-            const emissionsChart = window.emissionsChart;
-            
-            // 获取所有滑块的值
-            const coalValue = document.getElementById('coal-slider').value;
-            const oilValue = document.getElementById('oil-slider').value;
-            const gasValue = document.getElementById('gas-slider').value;
-            const renewablesValue = document.getElementById('renewables-slider').value;
-            const nuclearValue = document.getElementById('nuclear-slider').value;
-            const bioenergyValue = document.getElementById('bioenergy-slider').value;
-            
-            // 获取交通与建筑滑块的值
-            const efficiencyValue = document.getElementById('efficiency-slider').value;
-            const electrificationValue = document.getElementById('electrification-slider').value;
-            
-            // 获取碳管理滑块的值
-            const carbonPriceValue = document.getElementById('carbon-price-slider').value;
-            const carbonCaptureValue = document.getElementById('carbon-capture-slider').value;
-            
-            // 计算排放量（简化模型）
-            const baseEmissions = [40, 58, 70, 65, 55, 45];
-            const newEmissions = baseEmissions.map((value, index) => {
-                if (index === 0 || index === 1) return value; // 历史数据不变
                 
-                // 化石燃料增加排放
-                let emission = value;
-                emission += (coalValue - 50) * 0.3 * (index - 1);
-                emission += (oilValue - 50) * 0.2 * (index - 1);
-                emission += (gasValue - 50) * 0.15 * (index - 1);
+                // 计算该参数的影响
+                const impact = percentage * weight / 100;
                 
-                // 清洁能源减少排放
-                emission -= (renewablesValue - 50) * 0.25 * (index - 1);
-                emission -= (nuclearValue - 50) * 0.15 * (index - 1);
-                emission -= (bioenergyValue - 50) * 0.1 * (index - 1);
-                
-                // 交通与建筑影响排放
-                emission -= (efficiencyValue - 50) * 0.2 * (index - 1);
-                emission -= (electrificationValue - 50) * 0.18 * (index - 1);
-                
-                // 碳管理影响排放
-                emission -= (carbonPriceValue - 50) * 0.3 * (index - 1);
-                emission -= (carbonCaptureValue - 50) * 0.25 * (index - 1);
-                
-                return Math.max(0, emission); // 确保排放量不为负
+                // 累加总体影响
+                totalImpact -= impact; // 负号表示增加绿色政策会降低温度
             });
             
-            emissionsChart.data.datasets[0].data = newEmissions;
-            emissionsChart.update();
+            // 基准温度为3.3°C
+            const baseTemperature = 3.3;
+            let newTemperature = baseTemperature + totalImpact;
+            
+            // 限制温度范围
+            newTemperature = Math.max(1.5, Math.min(4.5, newTemperature));
+            
+            // 更新温度显示
+            document.querySelector('.temperature').innerHTML = `+${newTemperature.toFixed(1)}<span class="temperature-unit">°C</span>`;
+            
+            // 根据温度变化更新颜色
+            const temperatureElement = document.querySelector('.temperature');
+            if (newTemperature <= 2.0) {
+                temperatureElement.style.color = '#2ecc71'; // 绿色
+            } else if (newTemperature <= 3.0) {
+                temperatureElement.style.color = '#f39c12'; // 橙色
+            } else {
+                temperatureElement.style.color = '#e74c3c'; // 红色
+            }
         }
         
         // 更新图表数据
         function updateCharts() {
-            updateEnergyChart();
-            updateEmissionsChart();
+            // 获取所有滑块的值
+            const coalValue = document.getElementById('coal-slider').value - 50;
+            const oilValue = document.getElementById('oil-slider').value - 50;
+            const gasValue = document.getElementById('gas-slider').value - 50;
+            const renewablesValue = document.getElementById('renewables-slider').value - 50;
+            const nuclearValue = document.getElementById('nuclear-slider').value - 50;
+            const bioenergyValue = document.getElementById('bioenergy-slider').value - 50;
+            const efficiencyValue = document.getElementById('efficiency-slider').value - 50;
+            const carbonPriceValue = document.getElementById('carbon-price-slider').value - 50;
+            
+            // 更新能源结构图表
+            const energyChart = window.energyChart;
+            
+            // 煤炭数据更新
+            energyChart.data.datasets[0].data = [
+                100,
+                150,
+                120 * (1 - coalValue * 0.005),
+                100 * (1 - coalValue * 0.008),
+                80 * (1 - coalValue * 0.01),
+                60 * (1 - coalValue * 0.012)
+            ];
+            
+            // 石油数据更新
+            energyChart.data.datasets[1].data = [
+                120,
+                140,
+                130 * (1 - oilValue * 0.004),
+                110 * (1 - oilValue * 0.006),
+                90 * (1 - oilValue * 0.008),
+                70 * (1 - oilValue * 0.01)
+            ];
+            
+            // 天然气数据更新
+            energyChart.data.datasets[2].data = [
+                80,
+                110,
+                130 * (1 - gasValue * 0.003),
+                120 * (1 - gasValue * 0.005),
+                100 * (1 - gasValue * 0.007),
+                80 * (1 - gasValue * 0.009)
+            ];
+            
+            // 可再生能源数据更新
+            energyChart.data.datasets[3].data = [
+                20,
+                40,
+                80 * (1 + renewablesValue * 0.01),
+                120 * (1 + renewablesValue * 0.012),
+                160 * (1 + renewablesValue * 0.014),
+                200 * (1 + renewablesValue * 0.016)
+            ];
+            
+            // 核能数据更新
+            energyChart.data.datasets[4].data = [
+                10,
+                20,
+                30 * (1 + nuclearValue * 0.008),
+                40 * (1 + nuclearValue * 0.01),
+                50 * (1 + nuclearValue * 0.012),
+                60 * (1 + nuclearValue * 0.014)
+            ];
+            
+            // 生物能源数据更新
+            energyChart.data.datasets[5].data = [
+                5,
+                10,
+                20 * (1 + bioenergyValue * 0.006),
+                30 * (1 + bioenergyValue * 0.008),
+                40 * (1 + bioenergyValue * 0.01),
+                50 * (1 + bioenergyValue * 0.012)
+            ];
+            
+            // 更新排放图表
+            const emissionsChart = window.emissionsChart;
+            
+            // 计算总体减排效果
+            const totalReductionEffect = (
+                coalValue * 0.15 +
+                oilValue * 0.12 +
+                gasValue * 0.08 +
+                renewablesValue * 0.2 +
+                nuclearValue * 0.1 +
+                bioenergyValue * 0.05 +
+                efficiencyValue * 0.15 +
+                carbonPriceValue * 0.15
+            ) / 100;
+            
+            // 更新排放数据
+            emissionsChart.data.datasets[0].data = [
+                30,
+                40,
+                35 * (1 - totalReductionEffect * 0.5),
+                25 * (1 - totalReductionEffect * 0.8),
+                15 * (1 - totalReductionEffect * 1.0),
+                5 * (1 - totalReductionEffect * 1.2)
+            ];
+            
+            // 更新图表
+            energyChart.update();
+            emissionsChart.update();
         }
     </script>
 </body>
