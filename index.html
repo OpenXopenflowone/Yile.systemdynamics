@@ -1426,7 +1426,7 @@
             </div>
             
             <h3>关注我们</h3>
-            <p>关注我们的官方微信公众号和微博，获取最新的气候科学知识、政策动态和产品更新。</p>
+            <p>关注我们的官方微信公众号，获取最新的气候科学知识、政策动态和产品更新。</p>
             <p><strong>微信公众号：</strong>太能控股</p>
             
         </div>
@@ -1435,14 +1435,14 @@
     <!-- 页脚 -->
     <footer class="footer">
         <div class="footer-logo">Yile System Dynamics</div>
-        <p>河南太能控股出品</p>
+        <p>河南省太能控股出品</p>
         <div class="footer-links">
             <a href="#" data-page="about">关于我们</a>
             <a href="#" data-page="guide">使用指南</a>
             <a href="#" data-page="data">数据来源</a>
             <a href="#" data-page="contact">联系我们</a>
         </div>
-        <div class="copyright">© 2025 河南太能控股 版权所有</div>
+        <div class="copyright">© 2025 河南省太能控股 版权所有</div>
     </footer>
     
     <!-- 引入Chart.js -->
@@ -1673,18 +1673,40 @@
                 const name = slider.getAttribute('data-name');
                 
                 // 根据不同参数设置不同权重
-                let weight = 0.1;
-                if (name === '煤炭' || name === '石油') {
-                    weight = 0.15;
-                } else if (name === '可再生能源' || name === '碳价格') {
-                    weight = 0.2;
+                let weight = 0;
+                if (name === '煤炭') {
+                    weight = 0.25; // 煤炭影响最大
+                } else if (name === '石油') {
+                    weight = 0.20; // 石油影响次之
+                } else if (name === '天然气') {
+                    weight = 0.15; // 天然气影响较小
+                } else if (name === '可再生能源') {
+                    weight = 0.30; // 可再生能源影响最大
+                } else if (name === '核能') {
+                    weight = 0.20; // 核能影响较大
+                } else if (name === '生物能源') {
+                    weight = 0.15; // 生物能源影响较小
+                } else if (name === '能源效率') {
+                    weight = 0.25; // 能源效率影响较大
+                } else if (name === '电气化') {
+                    weight = 0.30; // 电气化影响最大
+                } else if (name === '碳价格') {
+                    weight = 0.25; // 碳价格影响较大
+                } else if (name === '碳捕获') {
+                    weight = 0.20; // 碳捕获影响较大
                 }
                 
                 // 计算该参数的影响
                 const impact = percentage * weight / 100;
                 
                 // 累加总体影响
-                totalImpact -= impact; // 负号表示增加绿色政策会降低温度
+                if (name === '煤炭' || name === '石油' || name === '天然气') {
+                    // 化石燃料增加会提高温度
+                    totalImpact += impact;
+                } else {
+                    // 清洁能源和减排措施增加会降低温度
+                    totalImpact -= impact;
+                }
             });
             
             // 基准温度为3.3°C
@@ -1718,94 +1740,98 @@
             const nuclearValue = document.getElementById('nuclear-slider').value - 50;
             const bioenergyValue = document.getElementById('bioenergy-slider').value - 50;
             const efficiencyValue = document.getElementById('efficiency-slider').value - 50;
+            const electrificationValue = document.getElementById('electrification-slider').value - 50;
             const carbonPriceValue = document.getElementById('carbon-price-slider').value - 50;
+            const carbonCaptureValue = document.getElementById('carbon-capture-slider').value - 50;
             
             // 更新能源结构图表
             const energyChart = window.energyChart;
             
-            // 煤炭数据更新
+            // 煤炭数据更新 - 增强参数影响
             energyChart.data.datasets[0].data = [
                 100,
                 150,
-                120 * (1 - coalValue * 0.005),
-                100 * (1 - coalValue * 0.008),
-                80 * (1 - coalValue * 0.01),
-                60 * (1 - coalValue * 0.012)
+                120 * (1 - coalValue * 0.01),  // 增强影响
+                100 * (1 - coalValue * 0.015), // 增强影响
+                80 * (1 - coalValue * 0.02),   // 增强影响
+                60 * (1 - coalValue * 0.025)   // 增强影响
             ];
             
-            // 石油数据更新
+            // 石油数据更新 - 增强参数影响
             energyChart.data.datasets[1].data = [
                 120,
                 140,
-                130 * (1 - oilValue * 0.004),
-                110 * (1 - oilValue * 0.006),
-                90 * (1 - oilValue * 0.008),
-                70 * (1 - oilValue * 0.01)
+                130 * (1 - oilValue * 0.008),  // 增强影响
+                110 * (1 - oilValue * 0.012),  // 增强影响
+                90 * (1 - oilValue * 0.016),   // 增强影响
+                70 * (1 - oilValue * 0.02)     // 增强影响
             ];
             
-            // 天然气数据更新
+            // 天然气数据更新 - 增强参数影响
             energyChart.data.datasets[2].data = [
                 80,
                 110,
-                130 * (1 - gasValue * 0.003),
-                120 * (1 - gasValue * 0.005),
-                100 * (1 - gasValue * 0.007),
-                80 * (1 - gasValue * 0.009)
+                130 * (1 - gasValue * 0.006),  // 增强影响
+                120 * (1 - gasValue * 0.01),   // 增强影响
+                100 * (1 - gasValue * 0.014),  // 增强影响
+                80 * (1 - gasValue * 0.018)    // 增强影响
             ];
             
-            // 可再生能源数据更新
+            // 可再生能源数据更新 - 增强参数影响
             energyChart.data.datasets[3].data = [
                 20,
                 40,
-                80 * (1 + renewablesValue * 0.01),
-                120 * (1 + renewablesValue * 0.012),
-                160 * (1 + renewablesValue * 0.014),
-                200 * (1 + renewablesValue * 0.016)
+                80 * (1 + renewablesValue * 0.02),   // 增强影响
+                120 * (1 + renewablesValue * 0.024), // 增强影响
+                160 * (1 + renewablesValue * 0.028), // 增强影响
+                200 * (1 + renewablesValue * 0.032)  // 增强影响
             ];
             
-            // 核能数据更新
+            // 核能数据更新 - 增强参数影响
             energyChart.data.datasets[4].data = [
                 10,
                 20,
-                30 * (1 + nuclearValue * 0.008),
-                40 * (1 + nuclearValue * 0.01),
-                50 * (1 + nuclearValue * 0.012),
-                60 * (1 + nuclearValue * 0.014)
+                30 * (1 + nuclearValue * 0.016),  // 增强影响
+                40 * (1 + nuclearValue * 0.02),   // 增强影响
+                50 * (1 + nuclearValue * 0.024),  // 增强影响
+                60 * (1 + nuclearValue * 0.028)   // 增强影响
             ];
             
-            // 生物能源数据更新
+            // 生物能源数据更新 - 增强参数影响
             energyChart.data.datasets[5].data = [
                 5,
                 10,
-                20 * (1 + bioenergyValue * 0.006),
-                30 * (1 + bioenergyValue * 0.008),
-                40 * (1 + bioenergyValue * 0.01),
-                50 * (1 + bioenergyValue * 0.012)
+                20 * (1 + bioenergyValue * 0.012), // 增强影响
+                30 * (1 + bioenergyValue * 0.016), // 增强影响
+                40 * (1 + bioenergyValue * 0.02),  // 增强影响
+                50 * (1 + bioenergyValue * 0.024)  // 增强影响
             ];
             
             // 更新排放图表
             const emissionsChart = window.emissionsChart;
             
-            // 计算总体减排效果
+            // 计算总体减排效果 - 考虑电气化和能源效率的影响
             const totalReductionEffect = (
-                coalValue * 0.15 +
-                oilValue * 0.12 +
-                gasValue * 0.08 +
-                renewablesValue * 0.2 +
-                nuclearValue * 0.1 +
-                bioenergyValue * 0.05 +
-                efficiencyValue * 0.15 +
-                carbonPriceValue * 0.15
+                coalValue * 0.25 +                // 煤炭影响增强
+                oilValue * 0.20 +                 // 石油影响增强
+                gasValue * 0.15 +                 // 天然气影响增强
+                renewablesValue * 0.30 +          // 可再生能源影响增强
+                nuclearValue * 0.20 +             // 核能影响增强
+                bioenergyValue * 0.15 +           // 生物能源影响增强
+                efficiencyValue * 0.25 +          // 能源效率影响增强
+                electrificationValue * 0.30 +     // 电气化影响增强
+                carbonPriceValue * 0.25 +         // 碳价格影响增强
+                carbonCaptureValue * 0.20         // 碳捕获影响增强
             ) / 100;
             
-            // 更新排放数据
+            // 更新排放数据 - 增强参数影响
             emissionsChart.data.datasets[0].data = [
                 30,
                 40,
-                35 * (1 - totalReductionEffect * 0.5),
-                25 * (1 - totalReductionEffect * 0.8),
-                15 * (1 - totalReductionEffect * 1.0),
-                5 * (1 - totalReductionEffect * 1.2)
+                35 * (1 - totalReductionEffect * 1.0),  // 增强影响
+                25 * (1 - totalReductionEffect * 1.5),  // 增强影响
+                15 * (1 - totalReductionEffect * 2.0),  // 增强影响
+                5 * (1 - totalReductionEffect * 2.5)    // 增强影响
             ];
             
             // 更新图表
